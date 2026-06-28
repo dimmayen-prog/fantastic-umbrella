@@ -1,0 +1,23 @@
+/* styles.css — simple responsive styles */
+:root{
+  --bg:#f7f9fb;--card:#ffffff;--accent:#0b76ef;--muted:#6b7280;--radius:10px
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg,rgba(11,118,239,0.95),#0b76ef);color:white}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.brand{margin:0;font-size:1.25rem}
+.nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:1rem}
+.hero{padding:4rem 0;text-align:center}
+.hero h2{font-size:2rem;margin:0 0 0.5rem}
+.hero p{color:var(--muted);margin:0 0 1rem}
+.cta{display:inline-block;background:var(--accent);color:white;padding:.6rem 1rem;border-radius:8px;text-decoration:none}
+.section{padding:2rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.card{background:var(--card);padding:1rem;border-radius:var(--radius);box-shadow:0 6px 16px rgba(16,24,40,0.06)}
+label{display:block;margin-bottom:.5rem}
+input,textarea{width:100%;padding:.6rem;border:1px solid #e5e7eb;border-radius:8px;margin-top:.25rem}
+button{background:var(--accent);color:white;border:none;padding:.6rem 1rem;border-radius:8px;cursor:pointer}
+.site-footer{padding:1rem 0;text-align:center;color:var(--muted)}
+@media (min-width:760px){.hero h2{font-size:2.6rem}}

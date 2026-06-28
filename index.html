@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Fantastic Umbrella</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="brand">Fantastic Umbrella</h1>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Welcome to Fantastic Umbrella</h2>
+          <p>Simple, reliable, and stylish protection from the rain — now on the web.</p>
+          <a class="cta" href="#contact">Get in touch</a>
+        </div>
+      </section>
+
+      <section id="about" class="container section">
+        <h3>About</h3>
+        <p>We make great umbrellas. This is a starter website you can customize.</p>
+      </section>
+
+      <section id="features" class="container section grid">
+        <div class="card">
+          <h4>Durable</h4>
+          <p>Built to last through many storms.</p>
+        </div>
+        <div class="card">
+          <h4>Compact</h4>
+          <p>Folds small to carry anywhere.</p>
+        </div>
+        <div class="card">
+          <h4>Stylish</h4>
+          <p>Look good while staying dry.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="container section">
+        <h3>Contact</h3>
+        <p>Send us a message and we'll get back to you.</p>
+        <form id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+        <div id="status" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© Fantastic Umbrella — Built with GitHub</div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
